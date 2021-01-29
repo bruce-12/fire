@@ -1,0 +1,28 @@
+form{width:40% ;
+    padding:2%;
+    background-color: skyblue;
+
+}
+
+
+form input{
+    padding:2%;
+    border:1px;
+    background-color: yellowgreen;
+    margin-top: 15px;
+    width: 100%;
+}
+
+form button{
+    width: 100%;
+    border: none;
+    padding: 2%;
+    background-color: linen;
+}
+
+
+
+h2{
+    padding-left: 10%;
+    color: skyblue;
+}

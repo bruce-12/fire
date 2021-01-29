@@ -1,0 +1,45 @@
+
+<h2> REGISTER</h2>
+<div class="Addusers">
+    <form (ngSubmit)="Addusers(UsersData)" #UsersData="ngForm">
+      <label for="name"><b> NAME</b></label>
+     <input name="name" ngModel #name="ngModel">
+     <label for="SURName"><b> SURNAME</b></label>
+      <input name="surname" ngModel #surname="ngModel">
+      <label for="STUDENTADRESS"><b> ADDRESS</b></label>
+      <input name="address" ngModel #address="ngModel">
+
+      <label for="STUDENTCONTACTDETAILS"><b>CONTACT DETAILS</b></label>
+      <input name="contacts" ngModel #contacts="ngModel">
+
+      <label for="STUDENTREGISTEREDCOURSE"><b>Qualification</b></label>
+      <input name="course" ngModel #course="ngModel">
+
+      <button type="submit">submit data</button>
+  
+  
+    </form>
+</div>
+
+
+<p>sign with google account</p>
+<button type="signin with google">sign in with google</button>
+<button type="log out">log out</button>
+
+
+
+
+
+  <div class="column">
+  
+  <ul>
+    <li *ngFor="let items of students">
+      {{ item.name }} {{item.surname}} {{item.course}}
+<a [routerLink]="['/','student-details',item.id]" routerLinkActivate="routerLinkActivate">expand</a>
+
+
+    </li>
+
+  </ul>
+
+  </div>

@@ -1,0 +1,26 @@
+
+<h2>STUDENT details</h2>
+<div class="users">
+    <form (ngSubmit)="users(UsersData)" #UsersData="ngForm">
+      <label for="name"><b>STUDENT NAME</b></label>
+     <input name="name" ngModel #name="ngModel">
+     <label for="SURName"><b>STUDENT SURNAME</b></label>
+      <input name="surname" ngModel #surname="ngModel">
+      <label for="STUDENTADRESS"><b>STUDENT ADDRESS</b></label>
+      <input name="address" ngModel #address="ngModel">
+
+      <label for="STUDENTCONTACTDETAILS"><b>STUDENT CONTACT DETAILS</b></label>
+      <input name="contacts" ngModel #contacts="ngModel">
+
+      <label for="STUDENTREGISTEREDCOURSE"><b>STUDENT REGISTERED COURSE</b></label>
+      <input name="course" ngModel #course="ngModel">
+
+      <button type="submit">remove student</button>
+      
+      <button type="submit">update</button>
+      
+
+  
+  
+    </form>
+</div>
